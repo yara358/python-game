@@ -1,0 +1,33 @@
+import hashlib
+from datetime import date
+
+
+def hexa(final):
+    """
+    Function to get the number to hexa
+    :param final : the number we have to get
+    :return: the new number with hexa
+    """
+    h = hashlib.sha256(final.encode())
+    p = h.hexdigest()
+    return p
+
+
+def joi(s):
+    """
+    Function to split between words in list
+    :param s: list we need to split
+    :return: the new string we have
+    """
+    h = " ".join(s)
+    return h
+
+
+def date1():
+    """
+    Function to have today date
+    :return: today date
+    """
+    x = str(date.today())
+    return x
+
